@@ -10,7 +10,7 @@ Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBl
 ```typescript
 import { checkAdBlock } from "adblock-checker";
 
-console.log(checkAdBlock()); // true or false
+console.log(await checkAdBlock()); // true or false
 ```
 
 ## Usage for Browsers
