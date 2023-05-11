@@ -1,7 +1,7 @@
 {
   "name": "adblock-checker",
-  "version": "0.1.2",
-  "description": "Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBlock, ...) enabled.",
+  "version": "0.1.3",
+  "description": "Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBlock, AdGuard, ...) enabled.",
   "type": "module",
   "exports": "./lib/lib.js",
   "types": "./lib/lib.d.ts",
@@ -31,11 +31,11 @@
     "url": "git+https://github.com/magiclen/adblock-checker.git"
   },
   "keywords": [
-    "html",
-    "input",
-    "date",
-    "time",
-    "datetime"
+    "adblock",
+    "detect",
+    "ublock",
+    "adguard",
+    "adblocker"
   ],
   "author": "Magic Len",
   "license": "MIT",

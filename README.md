@@ -3,7 +3,7 @@ AdBlock Checker
 
 [![CI](https://github.com/magiclen/adblock-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/magiclen/adblock-checker/actions/workflows/ci.yml)
 
-Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBlock, ...) enabled.
+Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBlock, AdGuard, ...) enabled.
 
 ## Usage
 
