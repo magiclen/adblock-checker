@@ -2,7 +2,7 @@ const NORMAL_URL = "https://cdn.jsdelivr.net/gh/magiclen/adblock-checker/dist/ad
 const GOOGLE_ADS_URL = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
 /**
- * Check if the current web browser has any ad blockers enabled. So ads have been blocked.
+ * Check if the current web browser has any ad blockers enabled. If so, ads will have been blocked.
  */
 export const checkAdBlock = async (): Promise<boolean> => {
     try {
