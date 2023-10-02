@@ -8,7 +8,9 @@ export const checkAdBlock = async (): Promise<boolean> => {
     try {
         const controller = new AbortController();
 
-        setTimeout(() => controller.abort(), 15000);
+        setTimeout(() => {
+            controller.abort();
+        }, 15000);
 
         const result = await fetch(GOOGLE_ADS_URL, { method: "HEAD", signal: controller.signal });
 
@@ -20,7 +22,9 @@ export const checkAdBlock = async (): Promise<boolean> => {
         try {
             const controller = new AbortController();
 
-            setTimeout(() => controller.abort(), 15000);
+            setTimeout(() => {
+                controller.abort();
+            }, 15000);
 
             await fetch(NORMAL_URL, { method: "HEAD", signal: controller.signal });
 

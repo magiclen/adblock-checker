@@ -13,9 +13,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "plugin:@typescript-eslint/strict-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked"
     ],
     "rules": {
         "@typescript-eslint/no-var-requires": "warn",
@@ -153,8 +152,7 @@
             "off"
         ],
         "lines-between-class-members": [
-            "error",
-            "always"
+            "off"
         ],
         "max-len": [
             "off"
