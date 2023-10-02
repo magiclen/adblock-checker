@@ -191,7 +191,11 @@
             "error"
         ],
         "no-extra-parens": [
-            "error"
+            "error",
+            "all",
+            {
+                "nestedBinaryExpressions": false
+            }
         ],
         "no-lonely-if": [
             "error"
