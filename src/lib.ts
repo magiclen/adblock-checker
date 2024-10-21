@@ -1,5 +1,7 @@
-const NORMAL_URL = "https://cdn.jsdelivr.net/gh/magiclen/adblock-checker/dist/adblock-checker.min.js";
-const GOOGLE_ADS_URL = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+const NORMAL_URL
+    = "https://cdn.jsdelivr.net/gh/magiclen/adblock-checker/dist/adblock-checker.min.js";
+const GOOGLE_ADS_URL
+    = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
 /**
  * Check if the current web browser has any ad blockers enabled. If so, ads will have been blocked.
@@ -12,7 +14,10 @@ export const checkAdBlock = async (): Promise<boolean> => {
             controller.abort();
         }, 15000);
 
-        const result = await fetch(GOOGLE_ADS_URL, { method: "HEAD", signal: controller.signal });
+        const result = await fetch(GOOGLE_ADS_URL, {
+            method: "HEAD",
+            signal: controller.signal,
+        });
 
         const contentLength = result.headers.get("content-length");
 
@@ -26,12 +31,15 @@ export const checkAdBlock = async (): Promise<boolean> => {
                 controller.abort();
             }, 15000);
 
-            await fetch(NORMAL_URL, { method: "HEAD", signal: controller.signal });
+            await fetch(NORMAL_URL, {
+                method: "HEAD",
+                signal: controller.signal,
+            });
 
             // The network seems okay
 
             return true;
-        } catch (error) {
+        } catch (_error) {
             return false;
         }
     }
