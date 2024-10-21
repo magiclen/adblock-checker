@@ -293,6 +293,7 @@ export default tseslint.config(
                     "tests/**/*",
                     "**/*.test.ts",
                     "**/*.spec.ts",
+                    "webpack.config.ts",
                 ],
             }],
  
