@@ -1,3 +1,5 @@
+import { timeoutFetch } from "fetch-helper-x";
+
 const NORMAL_URL
     = "https://cdn.jsdelivr.net/gh/magiclen/adblock-checker/dist/adblock-checker.min.js";
 const GOOGLE_ADS_URL
@@ -8,15 +10,9 @@ const GOOGLE_ADS_URL
  */
 export const checkAdBlock = async (): Promise<boolean> => {
     try {
-        const controller = new AbortController();
-
-        setTimeout(() => {
-            controller.abort();
-        }, 15000);
-
-        const result = await fetch(GOOGLE_ADS_URL, {
+        const result = await timeoutFetch(GOOGLE_ADS_URL, {
             method: "HEAD",
-            signal: controller.signal,
+            requestTimeout: 15000,
         });
 
         const contentLength = result.headers.get("content-length");
@@ -25,15 +21,9 @@ export const checkAdBlock = async (): Promise<boolean> => {
     } catch {
         // Check network availibility
         try {
-            const controller = new AbortController();
-
-            setTimeout(() => {
-                controller.abort();
-            }, 15000);
-
-            await fetch(NORMAL_URL, {
+            await timeoutFetch(NORMAL_URL, {
                 method: "HEAD",
-                signal: controller.signal,
+                requestTimeout: 15000,
             });
 
             // The network seems okay
