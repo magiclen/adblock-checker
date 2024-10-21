@@ -1,7 +1,7 @@
 import { timeoutFetch } from "fetch-helper-x";
 
 const NORMAL_URL
-    = "https://cdn.jsdelivr.net/gh/magiclen/adblock-checker/dist/adblock-checker.min.js";
+    = "https://data.jsdelivr.com/v1/package/npm/typescript/badge";
 const GOOGLE_ADS_URL
     = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
