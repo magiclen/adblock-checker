@@ -36,9 +36,6 @@ importers:
       '@types/jest':
         specifier: ^29.5.13
         version: 29.5.13
-      '@types/node':
-        specifier: ^22.7.7
-        version: 22.7.7
       babel-loader:
         specifier: ^9.2.1
         version: 9.2.1(@babel/core@7.25.8)(webpack@5.95.0)

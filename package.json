@@ -52,7 +52,6 @@
         "@stylistic/eslint-plugin": "^2",
         "@types/eslint__js": "^8",
         "@types/jest": "^29.5.13",
-        "@types/node": "^22.7.7",
         "babel-loader": "^9.2.1",
         "eslint": "^9",
         "eslint-import-resolver-typescript": "^3",
