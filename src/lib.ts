@@ -1,6 +1,7 @@
 import { timeoutFetch } from "fetch-helper-x";
 
-const NORMAL_URL = "https://1.1.1.1";
+const NORMAL_URL
+    = "https://data.jsdelivr.com/v1/package/npm/typescript/badge";
 const GOOGLE_ADS_URL
     = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
