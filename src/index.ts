@@ -1,13 +1,9 @@
 import { timeoutFetch } from "fetch-helper-x";
 
-const NORMAL_URL
-    = "https://data.jsdelivr.com/v1/package/npm/typescript/badge";
-const GOOGLE_ADS_URL
-    = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+const NORMAL_URL = "https://data.jsdelivr.com/v1/package/npm/typescript/badge";
+const GOOGLE_ADS_URL = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
-/**
- * Check if the current web browser has any ad blockers enabled. If so, ads will have been blocked.
- */
+/** Check if the current web browser has any ad blockers enabled. If so, ads will have been blocked. */
 export const checkAdBlock = async (): Promise<boolean> => {
     try {
         const result = await timeoutFetch(GOOGLE_ADS_URL, {
@@ -29,7 +25,7 @@ export const checkAdBlock = async (): Promise<boolean> => {
             // The network seems okay
 
             return true;
-        } catch (_error) {
+        } catch {
             return false;
         }
     }
