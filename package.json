@@ -43,7 +43,7 @@
         "prepublishOnly": "npm run check && npm run test"
     },
     "dependencies": {
-        "fetch-helper-x": "^0.1.8"
+        "fetch-helper-x": "^0.2.0"
     },
     "devDependencies": {
         "@rslib/core": "^1.0.0",

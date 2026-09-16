@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       fetch-helper-x:
-        specifier: ^0.1.8
-        version: 0.1.8
+        specifier: ^0.2.0
+        version: 0.2.0
     devDependencies:
       '@rslib/core':
         specifier: ^1.0.0
@@ -1062,9 +1062,9 @@ packages:
       picomatch:
         optional: true
 
-  fetch-helper-x@0.1.8:
-    resolution: {integrity: sha512-OvqkHMCd3ITO5iJNqN9QWSygeLuwYDswPQ5bD8tL4SF9Z3BI3n/MkQaFjRrVPXhTzAUN0KCMTmtTe5LItO8nfQ==}
-    engines: {node: '>=20'}
+  fetch-helper-x@0.2.0:
+    resolution: {integrity: sha512-VIw207ec5xGGuMQRXRktHbke7cOBbbCtzmdvZun9YClHzoH/AV52FWizZbtMB7upFHRJUXBnFM9Q6bwzzcxUnw==}
+    engines: {node: '>=24'}
 
   formatly@0.7.0:
     resolution: {integrity: sha512-7CXJtIIA0zy/u12StsYk25qVKxvdLA2ep2sTNxK3ov0mGNIIDqIvAXDSgTnAfDJFsPfWjuz0WjfYSdpvnLA5Tg==}
@@ -1847,7 +1847,7 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.7
 
-  fetch-helper-x@0.1.8: {}
+  fetch-helper-x@0.2.0: {}
 
   formatly@0.7.0:
     dependencies:

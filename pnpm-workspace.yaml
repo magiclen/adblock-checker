@@ -1,2 +1,4 @@
 allowBuilds:
     esbuild: false
+minimumReleaseAgeExclude:
+    - fetch-helper-x@0.2.0
