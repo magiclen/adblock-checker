@@ -5,11 +5,6 @@ AdBlock Checker
 
 Check if the current web browser has any ad blockers (AdBlock, Adblock Plus, uBlock, AdGuard, ...) enabled.
 
-## Requirements
-
-- Node.js 24 or later
-- Or a modern browser
-
 ## Usage
 
 ```typescript
